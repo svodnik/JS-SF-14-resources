@@ -17,7 +17,7 @@ Make sure the new questions you add to the survey use the same class names as in
 */
 
 
-$("#surveyList li").each(function() {
-    var $removeButton = $('<button>').html("Remove question");
-    $(this).append($removeButton);
+$("#surveyList li").each(function () {
+  var $removeButton = $('<button>').attr('type', 'button').text("Remove question");
+  $(this).append($removeButton);
 });
